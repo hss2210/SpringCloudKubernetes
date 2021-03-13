@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: credit-service
+  cloud:
+    kubernetes:
+      config:
+        sources:
+          - name: credit-application-config
+            namespace: tst-mobil-micro
+      reload:
+        enabled: true
+        monitoring-config-maps: false
+    loadbalancer:
+      ribbon:
+        enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always

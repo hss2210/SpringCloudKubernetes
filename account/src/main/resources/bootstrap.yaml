@@ -1,0 +1,31 @@
+spring:
+  application:
+    name: account-service
+  cloud:
+    kubernetes:
+      config:
+        sources:
+          - name: account-application-config
+            namespace: tst-mobil-micro
+      secrets:
+        enable-api: true
+        sources:
+          - name: account-secret
+            namespace: tst-mobil-micro
+      reload:
+        enabled: true
+        monitoring-config-maps: false
+    loadbalancer:
+      ribbon:
+        enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      probes:
+        enabled: true
+      show-details: always

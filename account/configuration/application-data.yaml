@@ -1,0 +1,10 @@
+accounts:
+  accountInfoList:
+    - accountNo: 11112222
+      balance: 100
+      currency: TRY
+      customerCode: 88888888
+    - accountNo: 33334444
+      balance: 500
+      currency: USD
+      customerCode: 99999999
