@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: credit-service
-  namespace: tst-mobil-micro
+  namespace: tst-micro
 spec:
   replicas: 1
   strategy:

@@ -6,7 +6,7 @@ spring:
       config:
         sources:
           - name: credit-application-config
-            namespace: tst-mobil-micro
+            namespace: tst-micro
       reload:
         enabled: true
         monitoring-config-maps: false

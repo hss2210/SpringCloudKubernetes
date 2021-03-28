@@ -6,12 +6,12 @@ spring:
       config:
         sources:
           - name: account-application-config
-            namespace: tst-mobil-micro
+            namespace: tst-micro
       secrets:
         enable-api: true
         sources:
           - name: account-secret
-            namespace: tst-mobil-micro
+            namespace: tst-micro
       reload:
         enabled: true
         monitoring-config-maps: false
